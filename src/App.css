@@ -1,38 +1,320 @@
+* {
+  background-color: #f5f3f3;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+
+}
+#benefits,
+#scope,
+#recentWork,
+#pricing,
+#faq {
+  padding-top: 20%;
+  height: 100vh;
+}
+a {
+  background-color: white;
+  border-radius: 50px;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 70px;
+  height: auto;
+  border-radius: inherit;
+  margin-left: .5rem;
+  cursor: pointer;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  height: 64px;
+  margin: 25px auto;
+  background-color: white;
+  border-radius: 50px;
+  position: sticky;
+  top: 25px;
+  border: 1px solid  rgb(227, 227, 227) ;
+  z-index: 99;
+}
+nav ul {
+  background-color: white;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  border-radius: 34px;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  padding: 5px 20px;
+  background-color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul li a:hover {
+  transition: .3s ease-in-out 0s;
+  background-color: #f5f3f3;
+  padding: 10px 30px;
+  border-radius: 50px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-signup {
+  margin-right: .5rem;
+  padding: 15px 24px;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-signup:hover {
+  transition: 0.4s;
+  color: black;
+  background-color: #f5f3f3;
+}
+.text-container{
+  padding: 0px 20px;
+}
+.heading1 {
+  font-size: 72px;
+  font-family: "Manrope", sans-serif;
+  max-width: 1000px;
+margin: 14px auto 14px auto; 
+}
+.heading1>span {
+  color: rgb(236, 92, 43);
+}
+.reviews{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  margin-top: 4rem;
+}
+.container{
   display: flex;
   flex-direction: column;
+ align-items: center;
+  margin-top: 15px;
+}
+.clients-image {
+  height: 40px;
+  width: auto;
+  margin-right: 5px;
+}
+.stars{
+  display: flex;
   align-items: center;
+  margin: 0px 75px 0px 0;
+  z-index: 1;
+}
+.star-img {
+  height: 18px;
+  width: auto;
+  margin-right: 1px;  
+}
+.cl-para{
+  font-size: 13px;
+  margin-top: 3px;
+  margin-left: 2px;
+ color: rgb(102, 102, 102);
+}
+.p1{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgb(102, 102, 102);
+  margin-top: -20px;
+max-width: 700px;
+margin: 0 auto;
+}
+.p1>span{
+  color: black;
+}
+.btn-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 2rem;
+}
+.btn-book{
+  display: flex;
+  align-items: center;
+  background-color: rgb(236, 92, 43);
+   border: 1px rgb(236, 92, 43) solid;
+  padding: 16px 40px 16px 38px;
+  border-radius: 12px;
+}
+.btn-book>span{
+  font-size: 18px;
   color: white;
+  background-color:rgb(236, 92, 43) ;
+}
+.btn-book:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; 
+  background-color:rgb(249, 71, 12) ;
+}
+.btn-toggle {
+  display: none; 
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.bimg-container{
+max-width: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 40px auto;
+gap: 36px;
+
+} 
+.bimg-container img{
+  display: block;
+   height: 15px;
+   width: auto;
+   mix-blend-mode: multiply;
+    object-fit: cover;
+    image-rendering: auto;
+}
+.sl-container{
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-container{
+  display: flex;
+  width: calc(250px*14);
+  animation: scroll 35s linear infinite;
+}
+.slide-img{
+  display: flex;
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+ padding-right: 10px;
+}
+.slide-img img{
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.overlay {
+  position: absolute;
+ top: 250px;
+  
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  background: none;
+}
+
+.img-logo {
+  width: 20px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+.image-text {
+background: none;
+  font-size: 12px;
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  text-align: right;
+  color: rgb(102, 102, 102);
+}
+#benefits{
+  padding-top: 180px;
+}
+.B-heading1{
+  color: black;
+  font-size: 42px;
+  font-family: "Manrope",sans-serif;
+font-weight: 700;
+margin: 0;
+}
+.B-heading2{
+  color: #666666;
+  font-size: 20px;
+  font-family: "Inter Tight",sans-serif;
+  
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100%{
+    transform: translateX(calc(-250px*7));
   }
+}
+@media (max-width: 870px) {
+  nav ul li a {
+    font-size:12px ;
+    padding: 10px;
+  }
+
+  nav.show{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 25px 0px;
+    }
+  .ullist {
+   display: none; 
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   padding: 12px 20px;
+  }
+  .ullist.show {
+    display: flex;
+  }
+  
+  .btn-signup {
+  display: none;
+  flex-direction:column;
+  font-size: 12px;
+  align-items: center;
+  margin-left: auto;
+  width: 90%;
+
+  }
+  .btn-signup.show{
+  display: flex;
+
+  }
+  .btn-toggle {
+    position: absolute;
+    right: .5rem;
+    display: block;
+}
+.heading1 {
+  font-size: 48px;
+}
+  
 }
