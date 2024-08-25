@@ -1,11 +1,11 @@
-import s1 from "./s1.jpg"
-import s2 from "./s2.jpg"
-import s3 from "./s3.jpg"
-import s4 from "./s4.jpg"
-import s5 from "./s5.jpg"
-import s6 from "./s6.jpg"
-import s7 from "./s7.jpg"
-import imgLogo from "./logo1.jpg"
+import s1 from "./images/s1.jpg"
+import s2 from "./images/s2.jpg"
+import s3 from "./images/s3.jpg"
+import s4 from "./images/s4.jpg"
+import s5 from "./images/s5.jpg"
+import s6 from "./images/s6.jpg"
+import s7 from "./images/s7.jpg"
+
 
 export default function Slider2() {
     return (

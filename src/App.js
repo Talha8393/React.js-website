@@ -7,6 +7,8 @@ import Recent from './Recent';
 import Scope from './Scope';
 import Slider2 from './Slider2';
 import Pricing from './Pricing';
+import Faq from './Faq';
+import Footer from "./Footer"
 
 function App() {
   return (
@@ -19,13 +21,9 @@ function App() {
       <Scope/>
       <Slider2/>
       <Pricing/>
-      <> 
-    
-     
-        <h2 id="faq">
-          Hi I'm FAQ
-        </h2>
-      </>
+      <Faq/>
+      <Footer/>
+      
     </div>
 
   );

@@ -1,14 +1,14 @@
-import img2 from './img2.png'
-import star from './star.svg'
-import btnimg from "./btnimg.jpg"
-import b1 from "./b1.jpg"
-import b2 from "./b2.jpg"
-import b3 from "./b3.jpg"
+import img2 from './images/img2.png'
+import star from './images/star.svg'
+import btnimg from "./images/btnimg.jpg"
+import b1 from "./images/b1.jpg"
+import b2 from "./images/b2.jpg"
+import b3 from "./images/b3.jpg"
 
 
 const Reviews = () => (
     <>
-        <div className="reviews">
+        <div className="reviews" id='head'>
 
             <img className="clients-image" src={img2} alt="reviews" />
             <div className="star-container">
@@ -27,7 +27,7 @@ const Reviews = () => (
         </div>
 
         <div className='text-container'>
-            <h1 className='heading1' id='head'>
+            <h1 className='heading1' >
                 Your proven on-demand design partner
             </h1>
             <p className="p1">Experience exceptional design <span>without the hassle </span>of hiring an in-house

@@ -1,4 +1,4 @@
-import ficon from "./figma-icon.jpg"
+import ficon from "./images/figma-icon.jpg"
 
 export default function Scope(){
 
