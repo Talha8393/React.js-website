@@ -13,8 +13,8 @@
 #recentWork,
 #pricing,
 #faq {
-  padding-top: 20%;
-  height: 100vh;
+  padding-top: 15%;
+
 }
 a {
   background-color: white;
@@ -93,22 +93,21 @@ nav ul li a:hover {
   font-size: 72px;
   font-family: "Manrope", sans-serif;
   max-width: 1000px;
-margin: 14px auto 14px auto; 
+margin: 18px auto 30px auto; 
+line-height: 5rem;
 }
-.heading1>span {
-  color: rgb(236, 92, 43);
-}
+
 .reviews{
   display: flex;
  justify-content: center;
  align-items: center;
   margin-top: 4rem;
 }
-.container{
+.star-container{
   display: flex;
   flex-direction: column;
  align-items: center;
-  margin-top: 15px;
+  margin-top: -18px;
 }
 .clients-image {
   height: 40px;
@@ -127,14 +126,15 @@ margin: 14px auto 14px auto;
   margin-right: 1px;  
 }
 .cl-para{
-  font-size: 13px;
-  margin-top: 3px;
-  margin-left: 2px;
+ font-size: 13px;
+ margin-top: -18px;
+ margin-left: 175px;
  color: rgb(102, 102, 102);
 }
 .p1{
   font-size: 20px;
   font-family: sans-serif;
+  line-height: 1.8rem;
   color: rgb(102, 102, 102);
   margin-top: -20px;
 max-width: 700px;
@@ -155,16 +155,23 @@ margin: 0 auto;
    border: 1px rgb(236, 92, 43) solid;
   padding: 16px 40px 16px 38px;
   border-radius: 12px;
+  box-shadow: 2px 2px 5px;
 }
 .btn-book>span{
   font-size: 18px;
+  font-weight: 700;
   color: white;
+  font-family:"Manrope",sans-serif ;
   background-color:rgb(236, 92, 43) ;
 }
 .btn-book:hover{
   transform: scale(1.1);
+  background-color: transparent;
   transition: transform 0.3s ease-in-out; 
   background-color:rgb(249, 71, 12) ;
+}
+.btn-book:hover span{
+  background-color: transparent;
 }
 .btn-toggle {
   display: none; 
@@ -217,12 +224,9 @@ gap: 36px;
 .slide-img img{
   border-radius: 15px;
 }
-
-
 .overlay {
   position: absolute;
  top: 250px;
-  
   width: 100%;
   padding: 10px;
   background: rgba(0, 0, 0, 0.5);
@@ -231,7 +235,6 @@ gap: 36px;
   justify-content: flex-start; 
   background: none;
 }
-
 .img-logo {
   width: 20px; 
   height: auto;
@@ -250,7 +253,7 @@ background: none;
   padding-top: 180px;
 }
 .B-heading1{
-  color: black;
+  color: rgb(10, 9, 8);
   font-size: 42px;
   font-family: "Manrope",sans-serif;
 font-weight: 700;
@@ -262,6 +265,327 @@ margin: 0;
   font-family: "Inter Tight",sans-serif;
   
 }
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ padding-top: 20px;
+}
+.card {
+ max-width: 250px;
+ height: auto;
+margin: 0 30px;
+}
+.card h1{
+  font-size: 92px;
+  background: -webkit-linear-gradient(rgb(236, 92, 43), rgb(252, 202, 185));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto;
+  font-family:"Manrope",sans-serif;
+}
+
+.card h2 {
+  margin: 0 auto;
+  font-size: 20px;
+  font-family:"Manrope",sans-serif;
+  font-weight: 700;
+ color:rgb(10, 9, 8);
+}
+.card p {
+  font-size: 16px;
+  color: #666666;
+  font-family:"Inter Tight",sans-serif;
+
+  text-align: center;
+}
+.img-board{
+  margin-top: 40px;
+  width: 60%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+.btn2-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btn-work{
+  display: flex;
+  font-size: 18px;
+  font-family: "Manrope",sans-serif;
+  font-weight: 700;
+  background-color: white;
+  align-items: center;
+  color:rgb(236, 92, 43);
+  border: 1px rgb(236, 92, 43) solid;
+  padding: 16px 40px 16px 38px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px;
+}
+.btn-work i{
+  margin-right: 5px;
+background-color: transparent;
+}
+.btn-work:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; 
+}
+.R-heading1{
+  color: rgb(10, 9, 8);
+  font-size: 42px;
+  font-family: "Manrope",sans-serif;
+font-weight: 700;
+margin: 0;
+}
+.R-heading2{
+  color: #666666;
+  font-size: 20px;
+  font-family: "Inter Tight",sans-serif;
+  max-width: 420px;
+  line-height: 1.8rem;
+  text-wrap: wrap;
+  margin:1rem auto;
+}
+
+.reimg-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+margin: 3rem auto;
+}
+.re-img{
+  display: flex;
+}
+.re-img img{
+  border-radius: 15px;
+  object-fit: cover;
+  width: 490px;
+  height: 490px;
+  margin: 10px;
+}
+
+.btn3-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.btn-recentwork{
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Manrope",sans-serif;
+  font-weight: 700;
+  background-color: white;
+  color:rgb(236, 92, 43);
+  border: 1px rgb(236, 92, 43) solid;
+  padding: 16px 40px 16px 38px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 5px;
+}
+.btn-recentwork i{
+  margin-right: 5px;
+  background-color: transparent;
+}
+.btn-recentwork:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out; 
+}
+.S-heading2{
+  color: #666666;
+  font-size: 20px;
+  font-family: "Inter Tight",sans-serif;
+  max-width: 400px;
+  line-height: 1.8rem;
+  text-wrap: wrap;
+  margin:1rem auto;
+}
+.scope-links{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ text-align: center;
+ flex-wrap: wrap;
+ max-width: 700px;
+ margin: 4rem auto;
+ gap: 20px;
+}
+.scope-links a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  padding: 16px 32px;
+  background-color: white;
+  justify-content: center;
+ align-items: center;
+}
+.scope-links a:hover{
+  transition: .3s ease-in-out 0s;
+  padding-right: 54px;
+  border-radius: 50px;  
+}
+.ficon{
+  height: 28px;
+  width: 28px; 
+  opacity: 0; 
+}
+.scope-links a:hover .ficon{
+  position: relative;
+  left: 20px;
+ opacity: 1; 
+}
+
+.P-heading2{
+  color: #666666;
+  font-size: 20px;
+  font-family: "Inter Tight",sans-serif;
+  max-width: 600px;
+  line-height: 1.8rem;
+  text-wrap: wrap;
+  margin:1rem auto;
+}
+
+/* --------------------------------------Subscription CSS--------------- */
+.cards{
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: min-content;
+  justify-content: center;
+  max-width: 1000px;
+  overflow: visible;
+  padding: 0;
+  padding-top: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+.subscription-card {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 30px;
+  padding-top: 28px;
+  max-width: 360px;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+
+}
+
+.heading {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(236, 92, 43);
+  background-color: white;
+
+}
+
+.type-badge {
+  background-color: #FAFAFA;
+  color: #666666;
+  padding: 5px 10px;
+   margin-left: 50px;
+  border-radius: 15px;
+  font-family:"Inter Tight",sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+  background-color: white;
+
+}
+
+.price {
+  font-size: 40px;
+font-family: "Manrope",sans-serif;
+font-weight: 600;
+  background-color: white;
+
+}
+
+.per-week {
+  font-size: 14px;
+  font-family: "Manrope",sans-serif;
+font-weight: 700;
+  color: #888;
+  margin-left: 5px;
+  background-color: white;
+
+}
+
+.features-list {
+  list-style: none;
+  padding-bottom:50px;
+  padding-left: 0;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.feature-item {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: rgb(10, 9, 8);
+  font-family: "Inter Tight",sans-serif;
+  font-weight: 400;
+  background-color: white;
+
+}
+
+.p-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #50C878;
+  background-color: white; 
+
+}
+.or{
+  color: #A6A6A6;
+  background-color: white;
+}
+.p-text{
+  background-color: white;
+   text-decoration: underline;
+}
+.p-text:hover{
+  transform: scale(1.1);
+  transition:0.2s;
+}
+.pbtn-container{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.ps-btn1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* ------------------------------------------------------------------- */
+
 
 @keyframes scroll {
   0%{
@@ -272,6 +596,28 @@ margin: 0;
   }
 }
 @media (max-width: 870px) {
+  .clients-image {
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
+  }
+  .stars{
+    display: flex;
+    align-items: center;
+    margin: 5px 5px 0px 0;
+    z-index: 1;
+  }
+  .star-img {
+    height: 14px;
+    width: auto;
+    margin-right: 1px;  
+  }
+  .cl-para{
+   font-size: 10px;
+   margin-top: -13px;
+   margin-left: 185px;
+   color: rgb(102, 102, 102);
+  }
   nav ul li a {
     font-size:12px ;
     padding: 10px;
@@ -294,7 +640,6 @@ margin: 0;
   .ullist.show {
     display: flex;
   }
-  
   .btn-signup {
   display: none;
   flex-direction:column;
@@ -302,11 +647,9 @@ margin: 0;
   align-items: center;
   margin-left: auto;
   width: 90%;
-
   }
   .btn-signup.show{
   display: flex;
-
   }
   .btn-toggle {
     position: absolute;
@@ -316,5 +659,13 @@ margin: 0;
 .heading1 {
   font-size: 48px;
 }
-  
+.img-board{
+  width: 100%;
+  height: auto;
+}
+.re-img img{
+  width: 310px;
+  height: 310px;
+}
+
 }

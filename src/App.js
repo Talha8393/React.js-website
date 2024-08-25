@@ -3,26 +3,25 @@ import Navbar from './Nav';
 import Slider from './Slider';
 import Reviews from "./Rev";
 import Benefits from "./Benefits"
+import Recent from './Recent';
+import Scope from './Scope';
+import Slider2 from './Slider2';
+import Pricing from './Pricing';
 
 function App() {
   return (
-    <div className="App" id='top'>
+    <div className="App" >
       <Navbar />
       <Reviews/>
       <Slider/>
       <Benefits/>
+      <Recent/>
+      <Scope/>
+      <Slider2/>
+      <Pricing/>
       <> 
-      
-        <h2 id="recentWork">
-          Hi I'm Recent Work
-        </h2>
-
-        <h2 id="scope">
-          Hi I'm Scope
-        </h2>
-        <h2 id="pricing">
-          Hi I'm Pricing
-        </h2>
+    
+     
         <h2 id="faq">
           Hi I'm FAQ
         </h2>

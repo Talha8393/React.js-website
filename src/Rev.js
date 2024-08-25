@@ -11,7 +11,7 @@ const Reviews = () => (
         <div className="reviews">
 
             <img className="clients-image" src={img2} alt="reviews" />
-            <div className="container">
+            <div className="star-container">
                 <div className='stars'>
                     <img className='star-img' src={star} alt="rating" />
                     <img className='star-img' src={star} alt="rating" />
@@ -52,7 +52,6 @@ const Reviews = () => (
             <img src={b3} alt="b3" />
             <img src={b1} alt="b1" />
             <img src={b2} alt="b2" />
-        
         </div>
 
     </>

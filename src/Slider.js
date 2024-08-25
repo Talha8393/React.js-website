@@ -36,7 +36,8 @@ export default function Slider() {
             <img src={imgLogo} alt="logo" className="img-logo" />
             <p className="image-text">Website design for Shi Beach</p>
           </div>
-        </div><div className="slide-img">
+        </div>
+        <div className="slide-img">
           <img src={i5} alt="image" />
           <div className="overlay">
             <img src={imgLogo} alt="logo" className="img-logo" />
